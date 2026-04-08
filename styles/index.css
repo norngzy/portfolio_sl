@@ -70,7 +70,7 @@
 #wrap main .hero_wrap #reservation_form .child .child_title .info_icon img {}
 #wrap main .hero_wrap #reservation_form .child .child_title .child_info {}
 #wrap main .hero_wrap #reservation_form .child .child_title .child_info p {}
-#wrap main .hero_wrap #reservation_form .search_btn {}
+#wrap main .hero_wrap #reservation_form #search_btn {}
 /* 2.신라소개 */
 #wrap main .hotel_info {}
 #wrap main .hotel_info h1 {}
@@ -113,7 +113,8 @@
 #wrap main .dining_wrap .dining_contents .restaurant .restaurant_contents .contents_bg .contents_details .cd_text h1 {}
 #wrap main .dining_wrap .dining_contents .restaurant .restaurant_contents .contents_bg .contents_details .cd_text .cd_sub {}
 #wrap main .dining_wrap .dining_contents .restaurant .restaurant_contents .contents_bg .contents_details .cd_text .cd_place {}
-#wrap main .dining_wrap .dining_contents .restaurant .restaurant_contents .contents_bg .contents_details .cd_text .cd_place {}
+#wrap main .dining_wrap .dining_contents .restaurant .restaurant_contents .contents_bg .contents_details .cd_text .cd_time {}
+#wrap main .dining_wrap .dining_contents .restaurant .restaurant_contents .contents_bg .contents_details .cd_text .cd_call {}
 #wrap main .dining_wrap .dining_contents .restaurant .restaurant_contents .contents_bg .contents_details .cd_img {}
 #wrap main .dining_wrap .dining_contents .restaurant .restaurant_contents .contents_bg .contents_details .cd_img p {}
 #wrap main .dining_wrap .dining_contents .restaurant .restaurant_contents .contents_bg .contents_details .cd_img p img {}
@@ -127,9 +128,27 @@
 #wrap main .dining_wrap .dining_contents .loungebar .loungebar_contents .contents_bg .contents_details {}
 #wrap main .dining_wrap .dining_contents .loungebar .loungebar_contents .contents_bg .contents_details .cd_text {}
 #wrap main .dining_wrap .dining_contents .loungebar .loungebar_contents .contents_bg .contents_details .cd_text h1 {}
-#wrap main .dining_wrap .dining_contents .loungebar .loungebar_contents .contents_bg .contents_details .cd_text p {}
+#wrap main .dining_wrap .dining_contents .loungebar .loungebar_contents .contents_bg .contents_details .cd_text .cd_sub {}
+#wrap main .dining_wrap .dining_contents .loungebar .loungebar_contents .contents_bg .contents_details .cd_text .cd_place {}
+#wrap main .dining_wrap .dining_contents .loungebar .loungebar_contents .contents_bg .contents_details .cd_text .cd_time {}
+#wrap main .dining_wrap .dining_contents .loungebar .loungebar_contents .contents_bg .contents_details .cd_text .cd_call {}
 #wrap main .dining_wrap .dining_contents .loungebar .loungebar_contents .contents_bg .contents_details .cd_img {}
+#wrap main .dining_wrap .dining_contents .loungebar .loungebar_contents .contents_bg .contents_details .cd_img p {}
+#wrap main .dining_wrap .dining_contents .loungebar .loungebar_contents .contents_bg .contents_details .cd_img img {}
 #wrap main .dining_wrap .dining_contents .bakary {}
+#wrap main .dining_wrap .dining_contents .contents_bg {}
+#wrap main .dining_wrap .dining_contents .contents_bg p {}
+#wrap main .dining_wrap .dining_contents .contents_bg p img {}
+#wrap main .dining_wrap .dining_contents .contents_bg .contents_details {}
+#wrap main .dining_wrap .dining_contents .contents_bg .contents_details .cd_text {}
+#wrap main .dining_wrap .dining_contents .contents_bg .contents_details .cd_text h1 {}
+#wrap main .dining_wrap .dining_contents .contents_bg .contents_details .cd_text .cd_sub {}
+#wrap main .dining_wrap .dining_contents .contents_bg .contents_details .cd_text .cd_place {}
+#wrap main .dining_wrap .dining_contents .contents_bg .contents_details .cd_text .cd_time {}
+#wrap main .dining_wrap .dining_contents .contents_bg .contents_details .cd_text .cd_call {}
+#wrap main .dining_wrap .dining_contents .contents_bg .contents_details .cd_img {}
+#wrap main .dining_wrap .dining_contents .contents_bg .contents_details .cd_img p {}
+#wrap main .dining_wrap .dining_contents .contents_bg .contents_details .cd_img p img {}
 /* 5.신라숍배너 */
 #wrap main .shop_banner_wrap {}
 #wrap main .shop_banner_wrap h1 {}
@@ -144,12 +163,11 @@
 #wrap main .special_offers_wrap .offer_swiper .swiper-wrapper .swiper-slide a {}
 #wrap main .special_offers_wrap .offer_swiper .swiper-wrapper .swiper-slide a img {}
 #wrap main .special_offers_wrap .offer_swiper .swiper-wrapper .swiper-slide .offers_text {}
-#wrap main .special_offers_wrap .offer_swiper .swiper-wrapper .swiper-slide .offers_text p:nth-child(1){}
-#wrap main .special_offers_wrap .offer_swiper .swiper-wrapper .swiper-slide .offers_text p:nth-child(2){}
+#wrap main .special_offers_wrap .offer_swiper .swiper-wrapper .swiper-slide .offers_text p {}
 #wrap main .special_offers_wrap .offer_swiper .swiper-wrapper .swiper-slide .offers_text h2 {}
 #wrap main .special_offers_wrap .offer_swiper .swiper-wrapper .swiper-slide .offers_text h2 a {}
-#wrap main .special_offers_wrap .offer_swiper .prev {}
-#wrap main .special_offers_wrap .offer_swiper .next {}
+#wrap main .special_offers_wrap .offer_swiper .swiper-wrapper .swiper-slide .offers_text .event_date {}
+#wrap main .special_offers_wrap .offer_swiper .progressbar {}
 /* 7.멤버십 */
 #wrap main .shilla_membership_wrap {}
 #wrap main .shilla_membership_wrap .mbmbership_s {}
@@ -161,26 +179,25 @@
 #wrap main .shilla_membership_wrap .mbmbership_rewards {}
 #wrap main .shilla_membership_wrap .mbmbership_rewards .smr_text {}
 #wrap main .shilla_membership_wrap .mbmbership_rewards .smr_text p {}
-#wrap main .shilla_membership_wrap .mbmbership_rewards .smr_text a {}
+#wrap main .shilla_membership_wrap .mbmbership_rewards .smr_text .smr_btn {}
 #wrap main .shilla_membership_wrap .mbmbership_rewards .smr_text .smr_img {}
 #wrap main .shilla_membership_wrap .mbmbership_rewards .smr_text .smr_img img {}
 /* ==================================footer */
 #wrap footer {}
-#wrap footer h1 {}
-#wrap footer h1 a {}
-#wrap footer h1 a img {}
 #wrap footer .footer_top {}
-#wrap footer .footer_top .ft_upper {}
-#wrap footer .footer_top .ft_upper .ft_logo {}
-#wrap footer .footer_top .ft_upper .ft_logo a {}
-#wrap footer .footer_top .ft_upper .ft_logo a img {}
-#wrap footer .footer_top .ft_upper .sns {}
-#wrap footer .footer_top .ft_upper .sns a {}
-#wrap footer .footer_top .ft_upper .sns a img {}
-#wrap footer .footer_top .ft_down {}
-#wrap footer .footer_top .ft_down .ftd_text1 {}
-#wrap footer .footer_top .ft_down .ftd_text1 a {}
-#wrap footer .footer_top .ft_down .ftd_text2 a {}
+#wrap footer .footer_top .main_logo {}
+#wrap footer .footer_top .main_logo a {}
+#wrap footer .footer_top .main_logo a img{}
+#wrap footer .footer_top .ft_right {}
+#wrap footer .footer_top .ft_right .ft_upper {}
+#wrap footer .footer_top .ft_right .ft_upper .ft_logo {}
+#wrap footer .footer_top .ft_right .ft_upper .ft_logo a {}
+#wrap footer .footer_top .ft_right .ft_upper .ft_logo a img {}
+#wrap footer .footer_top .ft_right .ft_upper .sns {}
+#wrap footer .footer_top .ft_right .ft_upper .sns a {}
+#wrap footer .footer_top .ft_right .ft_upper .sns a img {}
+#wrap footer .footer_top .ft_right .ft_down {}
+#wrap footer .footer_top .ft_right .ft_down a {}
 #wrap footer .footer_bottom {}
 #wrap footer .footer_bottom address {}
 #wrap footer .footer_bottom address p {}
