@@ -50,273 +50,345 @@ lounTab[0].style.display ='none';
 lounTab[1].style.display ='none';
 lounTab[2].style.display ='none';
 
-tabMain[0].addEventListener('click',function(e){ //레스토랑
+tabMain[0].addEventListener('click', function(e) { //레스토랑
     e.preventDefault();
-    diningC[0].style.display = 'flex';
-    diningC[1].style.display = 'none';
-    diningC[2].style.display = 'none';
-    diningC[3].style.display = 'none';
-    diningC[4].style.display = 'none';
-    diningC[5].style.display = 'none';
-    diningC[6].style.display = 'none';
-    diningC[7].style.display = 'none';
-    diningC[8].style.display = 'none';
-    restTab[0].style.display = 'inline';
-    restTab[1].style.display = 'inline';
-    restTab[2].style.display = 'inline';
-    restTab[3].style.display = 'inline';
-    restTab[4].style.display = 'inline';
-    lounTab[0].style.display ='none';
-    lounTab[1].style.display ='none';
-    lounTab[2].style.display ='none';
-    tabMain[0].classList.add('active');
-    tabMain[1].classList.remove('active');
-    tabMain[2].classList.remove('active');
+    // 1. diningC 제어: 0번째만 flex, 나머지는 none
+    for (let i = 0; i < diningC.length; i++) {
+        if (i === 0) {
+            diningC[i].style.display = 'flex';
+        } else {
+            diningC[i].style.display = 'none';
+        }
+    }
+    // 2. restTab 제어: 모두 inline
+    for (let i = 0; i < restTab.length; i++) {
+        restTab[i].style.display = 'inline';
+    }
+    // 3. lounTab 제어: 모두 none
+    for (let i = 0; i < lounTab.length; i++) {
+        lounTab[i].style.display = 'none';
+    }
+    // 4. 활성화 클래스 제어
+    for (let i = 0; i < tabMain.length; i++) {
+        if (i === 0) {
+            tabMain[i].classList.add('active');
+        } else {
+            tabMain[i].classList.remove('active');
+        }
+    }
 });
-tabMain[1].addEventListener('click',function(e){ //라운지
+tabMain[1].addEventListener('click', function(e) { //라운지&바
     e.preventDefault();
-    diningC[5].style.display = 'flex';
-    lounTab[0].style.display ='inline';
-    lounTab[1].style.display ='inline';
-    lounTab[2].style.display ='inline';
-    diningC[0].style.display = 'none';
-    diningC[1].style.display = 'none';
-    diningC[2].style.display = 'none';
-    diningC[3].style.display = 'none';
-    diningC[4].style.display = 'none';
-    diningC[6].style.display = 'none';
-    diningC[7].style.display = 'none';
-    diningC[8].style.display = 'none';
-    restTab[0].style.display = 'none';
-    restTab[1].style.display = 'none';
-    restTab[2].style.display = 'none';
-    restTab[3].style.display = 'none';
-    restTab[4].style.display = 'none';
-    tabMain[1].classList.add('active');
-    tabMain[0].classList.remove('active');
-    tabMain[2].classList.remove('active');
+    // 1. diningC 제어: 5번째만 flex, 나머지는 none
+    for (let i = 0; i < diningC.length; i++) {
+        if (i === 5) {
+            diningC[i].style.display = 'flex';
+        } else {
+            diningC[i].style.display = 'none';
+        }
+    }
+    // 2. lounTab 제어: 모두 inline
+    for (let i = 0; i < lounTab.length; i++) {
+        lounTab[i].style.display = 'inline';
+    }
+    // 3. restTab 제어: 모두 none
+    for (let i = 0; i < restTab.length; i++) {
+        restTab[i].style.display = 'none';
+    }
+    // 4. 활성화 클래스 제어: 1번째만 active
+    for (let i = 0; i < tabMain.length; i++) {
+        if (i === 1) {
+            tabMain[i].classList.add('active');
+        } else {
+            tabMain[i].classList.remove('active');
+        }
+    }
 });
-tabMain[2].addEventListener('click',function(e){ //베이커리
+tabMain[2].addEventListener('click', function(e) { //베이커리
     e.preventDefault();
-    diningC[8].style.display = 'flex';
-    diningC[0].style.display = 'none';
-    diningC[1].style.display = 'none';
-    diningC[2].style.display = 'none';
-    diningC[3].style.display = 'none';
-    diningC[4].style.display = 'none';
-    diningC[5].style.display = 'none';
-    diningC[6].style.display = 'none';
-    diningC[7].style.display = 'none';
-    restTab[0].style.display = 'none';
-    restTab[1].style.display = 'none';
-    restTab[2].style.display = 'none';
-    restTab[3].style.display = 'none';
-    restTab[4].style.display = 'none';
-    lounTab[0].style.display ='none';
-    lounTab[1].style.display ='none';
-    lounTab[2].style.display ='none';
-    tabMain[2].classList.add('active');
-    tabMain[0].classList.remove('active');
-    tabMain[1].classList.remove('active');
-});
-
-restTab[0].addEventListener('click',function(e){ //더파크뷰
-    e.preventDefault();
-    diningC[0].style.display = 'flex';
-    diningC[1].style.display = 'none';
-    diningC[2].style.display = 'none';
-    diningC[3].style.display = 'none';
-    diningC[4].style.display = 'none';
-    diningC[5].style.display = 'none';
-    diningC[8].style.display = 'none';
-    //탭메뉴
-    lounTab[0].style.display ='none';
-    lounTab[1].style.display ='none';
-    lounTab[2].style.display ='none';
-    restTab[0].classList.add('active');
-    restTab[1].classList.remove('active');
-    restTab[2].classList.remove('active');
-    restTab[3].classList.remove('active');
-    restTab[4].classList.remove('active');
-    tabMain[0].classList.add('active');
-    tabMain[1].classList.remove('active');
-    tabMain[2].classList.remove('active');
-});
-restTab[1].addEventListener('click',function(e){ //라연
-    e.preventDefault();
-    diningC[1].style.display = 'flex';
-    diningC[0].style.display = 'none';
-    diningC[2].style.display = 'none';
-    diningC[3].style.display = 'none';
-    diningC[4].style.display = 'none';
-    diningC[5].style.display = 'none';
-    diningC[6].style.display = 'none';
-    diningC[7].style.display = 'none';
-    diningC[8].style.display = 'none';
-    //탭메뉴
-    lounTab[0].style.display ='none';
-    lounTab[1].style.display ='none';
-    lounTab[2].style.display ='none';
-    restTab[1].classList.add('active');
-    restTab[0].classList.remove('active');
-    restTab[2].classList.remove('active');
-    restTab[3].classList.remove('active');
-    restTab[4].classList.remove('active');
-    tabMain[0].classList.add('active');
-    tabMain[1].classList.remove('active');
-    tabMain[2].classList.remove('active');
-});
-restTab[2].addEventListener('click',function(e){ //팔선
-    e.preventDefault();
-    diningC[2].style.display = 'flex';
-    diningC[0].style.display = 'none';
-    diningC[1].style.display = 'none';
-    diningC[3].style.display = 'none';
-    diningC[4].style.display = 'none';
-    diningC[5].style.display = 'none';
-    diningC[6].style.display = 'none';
-    diningC[7].style.display = 'none';
-    diningC[8].style.display = 'none';
-    //탭메뉴
-    lounTab[0].style.display ='none';
-    lounTab[1].style.display ='none';
-    lounTab[2].style.display ='none';
-    restTab[2].classList.add('active');
-    restTab[0].classList.remove('active');
-    restTab[1].classList.remove('active');
-    restTab[3].classList.remove('active');
-    restTab[4].classList.remove('active');
-    tabMain[0].classList.add('active');
-    tabMain[1].classList.remove('active');
-    tabMain[2].classList.remove('active');
-});
-restTab[3].addEventListener('click',function(e){ //아리아께
-    e.preventDefault();
-    diningC[3].style.display = 'flex';
-    diningC[0].style.display = 'none';
-    diningC[1].style.display = 'none';
-    diningC[2].style.display = 'none';
-    diningC[4].style.display = 'none';
-    diningC[5].style.display = 'none';
-    diningC[6].style.display = 'none';
-    diningC[7].style.display = 'none';
-    diningC[8].style.display = 'none';
-    //탭메뉴
-    lounTab[0].style.display ='none';
-    lounTab[1].style.display ='none';
-    lounTab[2].style.display ='none';
-    restTab[3].classList.add('active');
-    restTab[0].classList.remove('active');
-    restTab[1].classList.remove('active');
-    restTab[2].classList.remove('active');
-    restTab[4].classList.remove('active');
-    tabMain[0].classList.add('active');
-    tabMain[1].classList.remove('active');
-    tabMain[2].classList.remove('active');
-});
-restTab[4].addEventListener('click',function(e){ //콘티
-    e.preventDefault();
-    diningC[4].style.display = 'flex';
-    diningC[0].style.display = 'none';
-    diningC[1].style.display = 'none';
-    diningC[2].style.display = 'none';
-    diningC[3].style.display = 'none';
-    diningC[5].style.display = 'none';
-    diningC[6].style.display = 'none';
-    diningC[7].style.display = 'none';
-    diningC[8].style.display = 'none';
-    //탭메뉴
-    lounTab[0].style.display ='none';
-    lounTab[1].style.display ='none';
-    lounTab[2].style.display ='none';
-    restTab[4].classList.add('active');
-    restTab[0].classList.remove('active');
-    restTab[1].classList.remove('active');
-    restTab[2].classList.remove('active');
-    restTab[3].classList.remove('active');
-    tabMain[0].classList.add('active');
-    tabMain[1].classList.remove('active');
-    tabMain[2].classList.remove('active');
+    // 1. diningC 제어: 8번째만 flex, 나머지는 none
+    for (let i = 0; i < diningC.length; i++) {
+        if (i === 8) {
+            diningC[i].style.display = 'flex';
+        } else {
+            diningC[i].style.display = 'none';
+        }
+    }
+    // 2. restTab 모두 숨기기
+    for (let i = 0; i < restTab.length; i++) {
+        restTab[i].style.display = 'none';
+    }
+    // 3. lounTab 모두 숨기기
+    for (let i = 0; i < lounTab.length; i++) {
+        lounTab[i].style.display = 'none';
+    }
+    // 4. 활성화 클래스 제어: 2번째만 active
+    for (let i = 0; i < tabMain.length; i++) {
+        if (i === 2) {
+            tabMain[i].classList.add('active');
+        } else {
+            tabMain[i].classList.remove('active');
+        }
+    }
 });
 
-lounTab[0].addEventListener('click',function(e){ //라이브러리
+//레스토랑서브탭
+restTab[0].addEventListener('click', function(e) { //더파크뷰
     e.preventDefault();
-    diningC[5].style.display = 'flex';
-    diningC[0].style.display = 'none';
-    diningC[1].style.display = 'none';
-    diningC[2].style.display = 'none';
-    diningC[3].style.display = 'none';
-    diningC[4].style.display = 'none';
-    diningC[6].style.display = 'none';
-    diningC[7].style.display = 'none';
-    diningC[8].style.display = 'none';
-    //탭메뉴
-    lounTab[0].style.display ='inline';
-    lounTab[1].style.display ='inline';
-    lounTab[2].style.display ='inline';
-    restTab[0].style.display ='none';
-    restTab[1].style.display ='none';
-    restTab[2].style.display ='none';
-    restTab[3].style.display ='none';
-    restTab[4].style.display ='none';
-    lounTab[0].classList.add('active');
-    lounTab[1].classList.remove('active');
-    lounTab[2].classList.remove('active');
-    tabMain[1].classList.add('active');
-    tabMain[0].classList.remove('active');
-    tabMain[2].classList.remove('active');
+    // 1. diningC 제어: 0번째만 flex, 나머지는 none
+    for (let i = 0; i < diningC.length; i++) {
+        if (i === 0) {
+            diningC[i].style.display = 'flex';
+        } else {
+            diningC[i].style.display = 'none';
+        }
+    }
+    // 2. lounTab 모두 숨기기
+    for (let i = 0; i < lounTab.length; i++) {
+        lounTab[i].style.display = 'none';
+    }
+    // 3. restTab 활성화 클래스 제어: 0번째만 active
+    for (let i = 0; i < restTab.length; i++) {
+        if (i === 0) {
+            restTab[i].classList.add('active');
+        } else {
+            restTab[i].classList.remove('active');
+        }
+    }
+    // 4. tabMain 활성화 클래스 제어: 0번째(레스토랑) active
+    for (let i = 0; i < tabMain.length; i++) {
+        if (i === 0) {
+            tabMain[i].classList.add('active');
+        } else {
+            tabMain[i].classList.remove('active');
+        }
+    }
 });
-lounTab[1].addEventListener('click',function(e){ //디스틸러스
+restTab[1].addEventListener('click', function(e) { //라연
     e.preventDefault();
-    diningC[6].style.display = 'flex';
-    diningC[0].style.display = 'none';
-    diningC[1].style.display = 'none';
-    diningC[2].style.display = 'none';
-    diningC[3].style.display = 'none';
-    diningC[4].style.display = 'none';
-    diningC[5].style.display = 'none';
-    diningC[7].style.display = 'none';
-    diningC[8].style.display = 'none';
-    //탭메뉴
-    lounTab[0].style.display ='inline';
-    lounTab[1].style.display ='inline';
-    lounTab[2].style.display ='inline';
-    restTab[0].style.display ='none';
-    restTab[1].style.display ='none';
-    restTab[2].style.display ='none';
-    restTab[3].style.display ='none';
-    restTab[4].style.display ='none';
-    lounTab[1].classList.add('active');
-    lounTab[0].classList.remove('active');
-    lounTab[2].classList.remove('active');
-    tabMain[1].classList.add('active');
-    tabMain[0].classList.remove('active');
-    tabMain[2].classList.remove('active');
+    // 1. diningC 제어: 1번째만 flex, 나머지는 none
+    for (let i = 0; i < diningC.length; i++) {
+        if (i === 1) {
+            diningC[i].style.display = 'flex';
+        } else {
+            diningC[i].style.display = 'none';
+        }
+    }
+    // 2. lounTab 모두 숨기기
+    for (let i = 0; i < lounTab.length; i++) {
+        lounTab[i].style.display = 'none';
+    }
+    // 3. restTab 활성화 클래스 제어: 1번째만 active
+    for (let i = 0; i < restTab.length; i++) {
+        if (i === 1) {
+            restTab[i].classList.add('active');
+        } else {
+            restTab[i].classList.remove('active');
+        }
+    }
+    // 4. tabMain 활성화 클래스 제어: 레스토랑(0번) active 유지
+    for (let i = 0; i < tabMain.length; i++) {
+        if (i === 0) {
+            tabMain[i].classList.add('active');
+        } else {
+            tabMain[i].classList.remove('active');
+        }
+    }
 });
-lounTab[2].addEventListener('click',function(e){ //이스큐즈라운지
+restTab[2].addEventListener('click', function(e) { //팔선
     e.preventDefault();
-    diningC[7].style.display = 'flex';
-    diningC[0].style.display = 'none';
-    diningC[1].style.display = 'none';
-    diningC[2].style.display = 'none';
-    diningC[3].style.display = 'none';
-    diningC[4].style.display = 'none';
-    diningC[5].style.display = 'none';
-    diningC[6].style.display = 'none';
-    diningC[8].style.display = 'none';
-    //탭메뉴
-    lounTab[0].style.display ='inline';
-    lounTab[1].style.display ='inline';
-    lounTab[2].style.display ='inline';
-    restTab[0].style.display ='none';
-    restTab[1].style.display ='none';
-    restTab[2].style.display ='none';
-    restTab[3].style.display ='none';
-    restTab[4].style.display ='none';
-    lounTab[2].classList.add('active');
-    lounTab[0].classList.remove('active');
-    lounTab[1].classList.remove('active');
-    tabMain[1].classList.add('active');
-    tabMain[0].classList.remove('active');
-    tabMain[2].classList.remove('active');
+    // 1. diningC 제어: 2번째만 flex, 나머지는 none
+    for (let i = 0; i < diningC.length; i++) {
+        if (i === 2) {
+            diningC[i].style.display = 'flex';
+        } else {
+            diningC[i].style.display = 'none';
+        }
+    }
+    // 2. lounTab 모두 숨기기
+    for (let i = 0; i < lounTab.length; i++) {
+        lounTab[i].style.display = 'none';
+    }
+    // 3. restTab 활성화 클래스 제어: 2번째만 active
+    for (let i = 0; i < restTab.length; i++) {
+        if (i === 2) {
+            restTab[i].classList.add('active');
+        } else {
+            restTab[i].classList.remove('active');
+        }
+    }
+    // 4. tabMain 활성화 클래스 제어: 레스토랑(0번) active 유지
+    for (let i = 0; i < tabMain.length; i++) {
+        if (i === 0) {
+            tabMain[i].classList.add('active');
+        } else {
+            tabMain[i].classList.remove('active');
+        }
+    }
+});
+restTab[3].addEventListener('click', function(e) { //아리아께
+    e.preventDefault();
+    // 1. diningC 제어: 3번째만 flex, 나머지는 none
+    for (let i = 0; i < diningC.length; i++) {
+        if (i === 3) {
+            diningC[i].style.display = 'flex';
+        } else {
+            diningC[i].style.display = 'none';
+        }
+    }
+    // 2. lounTab 모두 숨기기
+    for (let i = 0; i < lounTab.length; i++) {
+        lounTab[i].style.display = 'none';
+    }
+    // 3. restTab 활성화 클래스 제어: 3번째만 active
+    for (let i = 0; i < restTab.length; i++) {
+        if (i === 3) {
+            restTab[i].classList.add('active');
+        } else {
+            restTab[i].classList.remove('active');
+        }
+    }
+    // 4. tabMain 활성화 클래스 제어: 레스토랑(0번) active 유지
+    for (let i = 0; i < tabMain.length; i++) {
+        if (i === 0) {
+            tabMain[i].classList.add('active');
+        } else {
+            tabMain[i].classList.remove('active');
+        }
+    }
+});
+restTab[4].addEventListener('click', function(e) { //콘티
+    e.preventDefault();
+    // 1. diningC 제어: 4번째만 flex, 나머지는 none
+    for (let i = 0; i < diningC.length; i++) {
+        if (i === 4) {
+            diningC[i].style.display = 'flex';
+        } else {
+            diningC[i].style.display = 'none';
+        }
+    }
+    // 2. lounTab 모두 숨기기
+    for (let i = 0; i < lounTab.length; i++) {
+        lounTab[i].style.display = 'none';
+    }
+    // 3. restTab 활성화 클래스 제어: 4번째만 active
+    for (let i = 0; i < restTab.length; i++) {
+        if (i === 4) {
+            restTab[i].classList.add('active');
+        } else {
+            restTab[i].classList.remove('active');
+        }
+    }
+    // 4. tabMain 활성화 클래스 제어: 레스토랑(0번) active 유지
+    for (let i = 0; i < tabMain.length; i++) {
+        if (i === 0) {
+            tabMain[i].classList.add('active');
+        } else {
+            tabMain[i].classList.remove('active');
+        }
+    }
+});
+
+//라운지 서브탭
+lounTab[0].addEventListener('click', function(e) { //라이브러리
+    e.preventDefault();
+    // 1. diningC 제어: 5번째만 flex, 나머지는 none
+    for (let i = 0; i < diningC.length; i++) {
+        if (i === 5) {
+            diningC[i].style.display = 'flex';
+        } else {
+            diningC[i].style.display = 'none';
+        }
+    }
+    // 2. 탭 메뉴 노출 제어: lounTab은 보이고, restTab은 숨김
+    for (let i = 0; i < lounTab.length; i++) {
+        lounTab[i].style.display = 'inline';
+    }
+    for (let i = 0; i < restTab.length; i++) {
+        restTab[i].style.display = 'none';
+    }
+    // 3. lounTab 활성화 클래스 제어: 0번째만 active
+    for (let i = 0; i < lounTab.length; i++) {
+        if (i === 0) {
+            lounTab[i].classList.add('active');
+        } else {
+            lounTab[i].classList.remove('active');
+        }
+    }
+    // 4. tabMain 활성화 클래스 제어: 라운지(1번) active
+    for (let i = 0; i < tabMain.length; i++) {
+        if (i === 1) {
+            tabMain[i].classList.add('active');
+        } else {
+            tabMain[i].classList.remove('active');
+        }
+    }
+});
+lounTab[1].addEventListener('click', function(e) { //디스틸러스
+    e.preventDefault();
+    // 1. diningC 제어: 6번째만 flex, 나머지는 none
+    for (let i = 0; i < diningC.length; i++) {
+        if (i === 6) {
+            diningC[i].style.display = 'flex';
+        } else {
+            diningC[i].style.display = 'none';
+        }
+    }
+    // 2. 탭 메뉴 노출 제어
+    for (let i = 0; i < lounTab.length; i++) {
+        lounTab[i].style.display = 'inline';
+    }
+    for (let i = 0; i < restTab.length; i++) {
+        restTab[i].style.display = 'none';
+    }
+    // 3. lounTab 활성화 클래스 제어: 1번째만 active
+    for (let i = 0; i < lounTab.length; i++) {
+        if (i === 1) {
+            lounTab[i].classList.add('active');
+        } else {
+            lounTab[i].classList.remove('active');
+        }
+    }
+    // 4. tabMain 활성화 클래스 제어: 라운지(1번) active
+    for (let i = 0; i < tabMain.length; i++) {
+        if (i === 1) {
+            tabMain[i].classList.add('active');
+        } else {
+            tabMain[i].classList.remove('active');
+        }
+    }
+});
+lounTab[2].addEventListener('click', function(e) { //이그제큐티브
+    e.preventDefault();
+    // 1. diningC 제어: 7번째만 flex, 나머지는 none
+    for (let i = 0; i < diningC.length; i++) {
+        if (i === 7) {
+            diningC[i].style.display = 'flex';
+        } else {
+            diningC[i].style.display = 'none';
+        }
+    }
+    // 2. 탭 메뉴 노출 제어
+    for (let i = 0; i < lounTab.length; i++) {
+        lounTab[i].style.display = 'inline';
+    }
+    for (let i = 0; i < restTab.length; i++) {
+        restTab[i].style.display = 'none';
+    }
+    // 3. lounTab 활성화 클래스 제어: 2번째만 active
+    for (let i = 0; i < lounTab.length; i++) {
+        if (i === 2) {
+            lounTab[i].classList.add('active');
+        } else {
+            lounTab[i].classList.remove('active');
+        }
+    }
+    // 4. tabMain 활성화 클래스 제어: 라운지(1번) active
+    for (let i = 0; i < tabMain.length; i++) {
+        if (i === 1) {
+            tabMain[i].classList.add('active');
+        } else {
+            tabMain[i].classList.remove('active');
+        }
+    }
 });

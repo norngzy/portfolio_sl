@@ -83,73 +83,78 @@
 #wrap header .h_bottom nav .gnb li .depth_bg { display: none;
     width: 1920px; height: 300px; 
     background: #f5f5f5;
-    position: absolute; top:104px; left: 0;
-    z-index: 999;
-}
-#wrap header .h_bottom nav .gnb li .hotel_depth .hotel_depth2 {
-    display: flex; flex-flow: row nowrap; 
-    align-items: flex-start;
-}
-#wrap header .h_bottom nav .gnb li .hotel_depth .hotel_depth2 > li {}
-#wrap header .h_bottom nav .gnb li .hotel_depth .hotel_depth2 li a {
-    font-size: 0.94rem; font-weight: 500; color: #3F2B2D;
-    display: block;
-}
-#wrap header .h_bottom nav .gnb li .hotel_depth .hotel_depth2 > li:nth-child(3) .hotel_depth3 {
-    display: flex; flex-flow: row wrap; 
-}
-#wrap header .h_bottom nav .gnb li .hotel_depth .hotel_depth2 li .hotel_depth3 {
-    display: flex; flex-flow: column nowrap; gap: 15px 0; 
-    justify-content: flex-start; 
-}
-#wrap header .h_bottom nav .gnb li .hotel_depth .hotel_depth2 li .hotel_depth3 li {}
-#wrap header .h_bottom nav .gnb li .hotel_depth .hotel_depth2 li .hotel_depth3 li a {
-    font-size: 0.88rem; margin-bottom: 0; 
-}
-#wrap header .h_bottom nav .gnb li .info_depth .info_depth2 {
-    display: flex; flex-flow: row wrap; margin: 100px 0 50px 200px;
-    align-items: flex-start; width: 500px;
-}
-#wrap header .h_bottom nav .gnb li .info_depth .info_depth2 > li:nth-child(1),
-#wrap header .h_bottom nav .gnb li .info_depth .info_depth2 > li:nth-child(5) {border-left:0;}
-#wrap header .h_bottom nav .gnb li .info_depth .info_depth2 li {
-    border-left: 1px solid #d9d9d9;
-    padding: 0 30px; text-align: center;
-}
-#wrap header .h_bottom nav .gnb li .info_depth .info_depth2 li a {
-    font-size: 0.94rem; font-weight: 500; color: #3F2B2D;
-    display: block;
-}
-#wrap header .h_bottom nav .gnb li .depth_bg .gnb_depth2 .room_depth3 {
-    display: flex; flex-flow: row wrap; gap:20px;
-    width: 260px;
-}
-#wrap header .h_bottom nav .gnb li .depth_bg .gnb_depth2 .dining_depth3 {
-    display: flex; flex-flow: row wrap; 
-    width: 260px;
-}
-#wrap header .h_bottom nav .gnb li .depth_bg .gnb_depth2 .hotel_depth3 {
-    display: flex; flex-flow: row wrap; 
-    width: 339px;
+    position: absolute; top:104px; left: 0; z-index: 999;
 }
 #wrap header .h_bottom nav .gnb li .depth_bg h2 {
-    color: #3F2B2D; padding: 141px 0 141px 388px;
-    font-size: 1.13rem; font-weight: 300;
+    font-size: 1.13rem; color: #3F2B2D; font-weight: 300; 
+    margin: 141px 0 141px 388px;
 }
 #wrap header .h_bottom nav .gnb li .depth_bg .gnb_depth2 {
-    display: flex; flex-flow: row nowrap; margin: 50px 0 50px 200px;
+    display: flex; padding: 50px 0 0 170px; 
 }
 #wrap header .h_bottom nav .gnb li .depth_bg .gnb_depth2 > li {
-    display: flex; flex-flow: column wrap; gap: 20px;
+    padding: 0 60px;  
+    display: flex; flex-flow: column nowrap; 
+    position: relative;
 }
-#wrap header .h_bottom nav .gnb li .depth_bg .gnb_depth2 li a {
-    color: #3F2B2D; padding-bottom: 20px; display: block;
-    font-size: 0.94rem; font-weight: 500;
+#wrap header .h_bottom nav .gnb li .depth_bg .gnb_depth2 > li::before {
+    content: '';
+    position: absolute; left: 0; top: 100px; transform: translateY(-50%); 
+    width: 1px; height: 100px;    
+    background-color: #d9d9d9; 
 }
-#wrap header .h_bottom nav .gnb li .depth_bg .gnb_depth2 li .gnb_depth3 {}
-#wrap header .h_bottom nav .gnb li .depth_bg .gnb_depth2 li .gnb_depth3 li {}
-#wrap header .h_bottom nav .gnb li .depth_bg .gnb_depth2 li .gnb_depth3 li a {
-    font-size: 0.88rem;
+#wrap header .h_bottom nav .gnb li .depth_bg .gnb_depth2 > li:first-child::before {display: none;}
+#wrap header .h_bottom nav .gnb li .depth_bg .gnb_depth2 > li > a {
+    display: block;
+    font-size: 0.94rem; color: #3F2B2D; font-weight: 500;
+    margin-bottom: 50px; 
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .gnb_depth3 li {
+    margin-bottom: 20px;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .gnb_depth3 li a {
+    font-size: 0.88rem; color: #000;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .hotel_depth3 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px; 
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .hotel_depth3 li {
+    margin-bottom: 0; 
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .info_depth2 {
+    display: grid; height: 63px;
+    grid-template-columns: repeat(4, 1fr);    
+    padding: 118px 0 0 170px; 
+    gap:30px;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .info_depth2 li {
+    position: relative;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .info_depth2 li a {
+    font-size: 0.94rem; color: #3F2B2D; font-weight: 500;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .info_depth2 li::after {
+    content: '';
+    position: absolute; right: -20%; top: 50%; transform: translateY(-50%);
+    width: 1px; height: 12px; 
+    background-color: #d9d9d9;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .info_depth2 li:nth-child(4n)::after {display: none;}
+#wrap header .h_bottom nav .gnb li .depth_bg .room_depth3 li {
+    margin-bottom: 20px;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .room_depth3 li a {
+    font-size: 0.88rem; color: #000;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .room_depth3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px 10px; 
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .room_depth3 li {
+    margin-bottom: 0; 
 }
 /*  ======================================= main */
 #wrap main {}
