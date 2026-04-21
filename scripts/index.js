@@ -9,6 +9,7 @@ console.log(heroBnr,roomSlide,offerSlide,tabMain,restTab,lounTab,diningC);
 
 const heroSwiper = new Swiper(heroBnr,{
     loop:true,
+    //autoplay:{delay:5000,},
     navigation:{
         prevEl:'.hero .prev',
         nextEl:'.hero .next',
