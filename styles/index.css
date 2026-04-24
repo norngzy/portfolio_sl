@@ -253,7 +253,7 @@
 #wrap main {  width: 100%;  min-width:1920px;}
 /* ======================================= 1-1.히어로배너 */
 #wrap main .hero_wrap {}
-#wrap main .hero_wrap .hero {  width: 100%;  min-width:1920px; height: 100vh;}
+#wrap main .hero_wrap .hero {width: 100%;  min-width:1920px; height: 100vh;}
 #wrap main .hero_wrap .hero .prev {
     background-image: url(../images/prev_w.png);
     background-size: contain;
@@ -304,7 +304,7 @@
     display: flex; flex-flow: row nowrap;
     justify-content: space-between; align-items: center;
     width: 1320px; padding: 30px 25px; 
-    position: absolute; bottom: 100px; left: 310px; z-index: 999;     
+    position: absolute; bottom: 60px; left: 300px; z-index: 999;     
     background-color: rgba(255,255,255,0.8);
     border-radius: 10px;
 }
