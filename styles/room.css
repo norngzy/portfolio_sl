@@ -1,0 +1,181 @@
+#wrap main .room_banner {}
+#wrap main .room_banner h1 {}
+#wrap main .room_banner p {}
+#wrap main .room_tap {}
+#wrap main .room_tap .active {}
+#wrap main .room_tap a {}
+#wrap main .room_contents {}
+/* ===================================== 스탠다드 */
+#wrap main .room_contents .standard {}
+#wrap main .room_contents .standard .r_contents_bg {}
+#wrap main .room_contents .standard .r_contents_bg .room_img {}
+#wrap main .room_contents .standard .r_contents_bg .room_img .prev {}
+#wrap main .room_contents .standard .r_contents_bg .room_img .next {}
+#wrap main .room_contents .standard .r_contents_bg .room_img .swiper-wrapper {}
+#wrap main .room_contents .standard .r_contents_bg .room_img .swiper-wrapper .swiper-slide {}
+#wrap main .room_contents .standard .r_contents_bg .r_text_bg {}
+#wrap main .room_contents .standard .r_contents_bg .r_text_bg .contets_text {}
+#wrap main .room_contents .standard .r_contents_bg .r_text_bg .contets_text h1 {}
+#wrap main .room_contents .standard .r_contents_bg .r_text_bg .contets_text .info {}
+#wrap main .room_contents .standard .r_contents_bg .r_text_bg .contets_text .view {}
+#wrap main .room_contents .standard .r_contents_bg .r_text_bg .contets_text .size {}
+#wrap main .room_contents .standard .r_contents_bg .r_text_bg .contets_text .place {}
+#wrap main .room_contents .standard .r_contents_bg .r_text_bg .contets_text .wifi {}
+#wrap main .room_contents .standard .r_contents_bg .r_text_bg .contets_text .people {}
+#wrap main .room_contents .standard .r_contents_bg .r_text_bg .contets_text .different {}
+#wrap main .room_contents .standard .r_contents_bg .r_text_bg .button {}
+#wrap main .room_contents .standard .r_contents_bg .r_text_bg .button a {}
+#wrap main .room_contents .standard .r_contents_bg .r_text_bg .button .view {}
+#wrap main .room_contents .standard .r_contents_bg .r_text_bg .button .qna {}
+#wrap main .room_contents .standard .r_contents_bg .r_text_bg .button .reservation {}
+#wrap main .room_contents .standard .room_info_bg {}
+#wrap main .room_contents .standard .room_info_bg .info_left {}
+#wrap main .room_contents .standard .room_info_bg .info_left .info_hotel {}
+#wrap main .room_contents .standard .room_info_bg .info_left .info_hotel .info_title_bg {}
+#wrap main .room_contents .standard .room_info_bg .info_left .info_hotel .info_title_bg h1 {}
+#wrap main .room_contents .standard .room_info_bg .info_left .info_hotel .info_text_bg {}
+#wrap main .room_contents .standard .room_info_bg .info_left .info_hotel .info_text_bg .checkinout {}
+#wrap main .room_contents .standard .room_info_bg .info_left .info_hotel .info_text_bg .checkinout dt {}
+#wrap main .room_contents .standard .room_info_bg .info_left .info_hotel .info_text_bg .checkinout dd {}
+#wrap main .room_contents .standard .room_info_bg .info_left .info_hotel .info_text_bg .breakfast {}
+#wrap main .room_contents .standard .room_info_bg .info_left .info_hotel .info_text_bg .breakfast dt {}
+#wrap main .room_contents .standard .room_info_bg .info_left .info_hotel .info_text_bg .breakfast dd {}
+#wrap main .room_contents .standard .room_info_bg .info_left .info_hotel .info_text_bg .noshow {}
+#wrap main .room_contents .standard .room_info_bg .info_left .info_hotel .info_text_bg .noshow dt {}
+#wrap main .room_contents .standard .room_info_bg .info_left .info_hotel .info_text_bg .noshow dd {}
+#wrap main .room_contents .standard .room_info_bg .info_left .info_hotel .info_text_bg .noshow .call {}
+#wrap main .room_contents .standard .room_info_bg .info_left .info_service {}
+#wrap main .room_contents .standard .room_info_bg .info_left .info_service .info_title_bg {}
+#wrap main .room_contents .standard .room_info_bg .info_left .info_service .info_title_bg h1 {}
+#wrap main .room_contents .standard .room_info_bg .info_left .info_service .info_text_bg {}
+#wrap main .room_contents .standard .room_info_bg .info_left .info_service .info_text_bg dt {}
+#wrap main .room_contents .standard .room_info_bg .info_right {}
+#wrap main .room_contents .standard .room_info_bg .info_right .info_use {}
+#wrap main .room_contents .standard .room_info_bg .info_right .info_use .info_title_bg {}
+#wrap main .room_contents .standard .room_info_bg .info_right .info_use .info_title_bg h1 {}
+#wrap main .room_contents .standard .room_info_bg .info_right .info_use .info_text_bg dt {}
+#wrap main .room_contents .standard .room_info_bg .info_right .info_use .info_text_bg a {}
+#wrap main .room_contents .standard .room_info_bg .info_right .info_subplace {}
+#wrap main .room_contents .standard .room_info_bg .info_right .info_subplace .info_title_bg {}
+#wrap main .room_contents .standard .room_info_bg .info_right .info_subplace .info_title_bg h1 {}
+#wrap main .room_contents .standard .room_info_bg .info_right .info_subplace .info_text_bg {}
+#wrap main .room_contents .standard .room_info_bg .info_right .info_subplace .info_text_bg dt {}
+#wrap main .room_contents .standard .room_info_bg .info_right .info_subplace .info_text_bg .fitness {}
+#wrap main .room_contents .standard .room_info_bg .info_right .info_subplace .info_text_bg .fitness dt {}
+#wrap main .room_contents .standard .room_info_bg .info_right .info_subplace .info_text_bg .fitness dd {}
+/* ===================================== 이그제큐티브 */
+#wrap main .room_contents .exective {}
+#wrap main .room_contents .exective .r_contents_bg {}
+#wrap main .room_contents .exective .r_contents_bg .room_img {}
+#wrap main .room_contents .exective .r_contents_bg .room_img .prev {}
+#wrap main .room_contents .exective .r_contents_bg .room_img .next {}
+#wrap main .room_contents .exective .r_contents_bg .room_img .swiper-wrapper {}
+#wrap main .room_contents .exective .r_contents_bg .room_img .swiper-wrapper .swiper-slide {}
+#wrap main .room_contents .exective .r_contents_bg .r_text_bg {}
+#wrap main .room_contents .exective .r_contents_bg .r_text_bg .contets_text {}
+#wrap main .room_contents .exective .r_contents_bg .r_text_bg .contets_text h1 {}
+#wrap main .room_contents .exective .r_contents_bg .r_text_bg .contets_text .info {}
+#wrap main .room_contents .exective .r_contents_bg .r_text_bg .contets_text .view {}
+#wrap main .room_contents .exective .r_contents_bg .r_text_bg .contets_text .size {}
+#wrap main .room_contents .exective .r_contents_bg .r_text_bg .contets_text .place {}
+#wrap main .room_contents .exective .r_contents_bg .r_text_bg .contets_text .wifi {}
+#wrap main .room_contents .exective .r_contents_bg .r_text_bg .contets_text .people {}
+#wrap main .room_contents .exective .r_contents_bg .r_text_bg .contets_text .different {}
+#wrap main .room_contents .exective .r_contents_bg .r_text_bg .button {}
+#wrap main .room_contents .exective .r_contents_bg .r_text_bg .button a {}
+#wrap main .room_contents .exective .r_contents_bg .r_text_bg .button .view {}
+#wrap main .room_contents .exective .r_contents_bg .r_text_bg .button .qna {}
+#wrap main .room_contents .exective .r_contents_bg .r_text_bg .button .reservation {}
+#wrap main .room_contents .exective .room_info_bg {}
+#wrap main .room_contents .exective .room_info_bg .info_left {}
+#wrap main .room_contents .exective .room_info_bg .info_left .info_hotel {}
+#wrap main .room_contents .exective .room_info_bg .info_left .info_hotel .info_title_bg {}
+#wrap main .room_contents .exective .room_info_bg .info_left .info_hotel .info_title_bg h1 {}
+#wrap main .room_contents .exective .room_info_bg .info_left .info_hotel .info_text_bg {}
+#wrap main .room_contents .exective .room_info_bg .info_left .info_hotel .info_text_bg .checkinout {}
+#wrap main .room_contents .exective .room_info_bg .info_left .info_hotel .info_text_bg .checkinout dt {}
+#wrap main .room_contents .exective .room_info_bg .info_left .info_hotel .info_text_bg .checkinout dd {}
+#wrap main .room_contents .exective .room_info_bg .info_left .info_hotel .info_text_bg .breakfast {}
+#wrap main .room_contents .exective .room_info_bg .info_left .info_hotel .info_text_bg .breakfast dt {}
+#wrap main .room_contents .exective .room_info_bg .info_left .info_hotel .info_text_bg .breakfast dd {}
+#wrap main .room_contents .exective .room_info_bg .info_left .info_hotel .info_text_bg .noshow {}
+#wrap main .room_contents .exective .room_info_bg .info_left .info_hotel .info_text_bg .noshow dt {}
+#wrap main .room_contents .exective .room_info_bg .info_left .info_hotel .info_text_bg .noshow dd {}
+#wrap main .room_contents .exective .room_info_bg .info_left .info_hotel .info_text_bg .noshow .call {}
+#wrap main .room_contents .exective .room_info_bg .info_left .info_service {}
+#wrap main .room_contents .exective .room_info_bg .info_left .info_service .info_title_bg {}
+#wrap main .room_contents .exective .room_info_bg .info_left .info_service .info_title_bg h1 {}
+#wrap main .room_contents .exective .room_info_bg .info_left .info_service .info_text_bg {}
+#wrap main .room_contents .exective .room_info_bg .info_left .info_service .info_text_bg dt {}
+#wrap main .room_contents .exective .room_info_bg .info_right {}
+#wrap main .room_contents .exective .room_info_bg .info_right .info_use {}
+#wrap main .room_contents .exective .room_info_bg .info_right .info_use .info_title_bg {}
+#wrap main .room_contents .exective .room_info_bg .info_right .info_use .info_title_bg h1 {}
+#wrap main .room_contents .exective .room_info_bg .info_right .info_use .info_text_bg dt {}
+#wrap main .room_contents .exective .room_info_bg .info_right .info_use .info_text_bg a {}
+#wrap main .room_contents .exective .room_info_bg .info_right .info_subplace {}
+#wrap main .room_contents .exective .room_info_bg .info_right .info_subplace .info_title_bg {}
+#wrap main .room_contents .exective .room_info_bg .info_right .info_subplace .info_title_bg h1 {}
+#wrap main .room_contents .exective .room_info_bg .info_right .info_subplace .info_text_bg {}
+#wrap main .room_contents .exective .room_info_bg .info_right .info_subplace .info_text_bg dt {}
+#wrap main .room_contents .exective .room_info_bg .info_right .info_subplace .info_text_bg .fitness {}
+#wrap main .room_contents .exective .room_info_bg .info_right .info_subplace .info_text_bg .fitness dt {}
+#wrap main .room_contents .exective .room_info_bg .info_right .info_subplace .info_text_bg .fitness dd {}
+/* ===================================== 스위트 */
+#wrap main .room_contents .suit {}
+#wrap main .room_contents .suit .r_contents_bg {}
+#wrap main .room_contents .suit .r_contents_bg .room_img {}
+#wrap main .room_contents .suit .r_contents_bg .room_img .prev {}
+#wrap main .room_contents .suit .r_contents_bg .room_img .next {}
+#wrap main .room_contents .suit .r_contents_bg .room_img .swiper-wrapper {}
+#wrap main .room_contents .suit .r_contents_bg .room_img .swiper-wrapper .swiper-slide {}
+#wrap main .room_contents .suit .r_contents_bg .r_text_bg {}
+#wrap main .room_contents .suit .r_contents_bg .r_text_bg .contets_text {}
+#wrap main .room_contents .suit .r_contents_bg .r_text_bg .contets_text h1 {}
+#wrap main .room_contents .suit .r_contents_bg .r_text_bg .contets_text .info {}
+#wrap main .room_contents .suit .r_contents_bg .r_text_bg .contets_text .view {}
+#wrap main .room_contents .suit .r_contents_bg .r_text_bg .contets_text .size {}
+#wrap main .room_contents .suit .r_contents_bg .r_text_bg .contets_text .place {}
+#wrap main .room_contents .suit .r_contents_bg .r_text_bg .contets_text .wifi {}
+#wrap main .room_contents .suit .r_contents_bg .r_text_bg .contets_text .people {}
+#wrap main .room_contents .suit .r_contents_bg .r_text_bg .contets_text .different {}
+#wrap main .room_contents .suit .r_contents_bg .r_text_bg .button {}
+#wrap main .room_contents .suit .r_contents_bg .r_text_bg .button a {}
+#wrap main .room_contents .suit .r_contents_bg .r_text_bg .button .view {}
+#wrap main .room_contents .suit .r_contents_bg .r_text_bg .button .qna {}
+#wrap main .room_contents .suit .r_contents_bg .r_text_bg .button .reservation {}
+#wrap main .room_contents .suit .room_info_bg {}
+#wrap main .room_contents .suit .room_info_bg .info_left {}
+#wrap main .room_contents .suit .room_info_bg .info_left .info_hotel {}
+#wrap main .room_contents .suit .room_info_bg .info_left .info_hotel .info_title_bg {}
+#wrap main .room_contents .suit .room_info_bg .info_left .info_hotel .info_title_bg h1 {}
+#wrap main .room_contents .suit .room_info_bg .info_left .info_hotel .info_text_bg {}
+#wrap main .room_contents .suit .room_info_bg .info_left .info_hotel .info_text_bg .checkinout {}
+#wrap main .room_contents .suit .room_info_bg .info_left .info_hotel .info_text_bg .checkinout dt {}
+#wrap main .room_contents .suit .room_info_bg .info_left .info_hotel .info_text_bg .checkinout dd {}
+#wrap main .room_contents .suit .room_info_bg .info_left .info_hotel .info_text_bg .breakfast {}
+#wrap main .room_contents .suit .room_info_bg .info_left .info_hotel .info_text_bg .breakfast dt {}
+#wrap main .room_contents .suit .room_info_bg .info_left .info_hotel .info_text_bg .breakfast dd {}
+#wrap main .room_contents .suit .room_info_bg .info_left .info_hotel .info_text_bg .noshow {}
+#wrap main .room_contents .suit .room_info_bg .info_left .info_hotel .info_text_bg .noshow dt {}
+#wrap main .room_contents .suit .room_info_bg .info_left .info_hotel .info_text_bg .noshow dd {}
+#wrap main .room_contents .suit .room_info_bg .info_left .info_hotel .info_text_bg .noshow .call {}
+#wrap main .room_contents .suit .room_info_bg .info_left .info_service {}
+#wrap main .room_contents .suit .room_info_bg .info_left .info_service .info_title_bg {}
+#wrap main .room_contents .suit .room_info_bg .info_left .info_service .info_title_bg h1 {}
+#wrap main .room_contents .suit .room_info_bg .info_left .info_service .info_text_bg {}
+#wrap main .room_contents .suit .room_info_bg .info_left .info_service .info_text_bg dt {}
+#wrap main .room_contents .suit .room_info_bg .info_right {}
+#wrap main .room_contents .suit .room_info_bg .info_right .info_use {}
+#wrap main .room_contents .suit .room_info_bg .info_right .info_use .info_title_bg {}
+#wrap main .room_contents .suit .room_info_bg .info_right .info_use .info_title_bg h1 {}
+#wrap main .room_contents .suit .room_info_bg .info_right .info_use .info_text_bg dt {}
+#wrap main .room_contents .suit .room_info_bg .info_right .info_use .info_text_bg a {}
+#wrap main .room_contents .suit .room_info_bg .info_right .info_subplace {}
+#wrap main .room_contents .suit .room_info_bg .info_right .info_subplace .info_title_bg {}
+#wrap main .room_contents .suit .room_info_bg .info_right .info_subplace .info_title_bg h1 {}
+#wrap main .room_contents .suit .room_info_bg .info_right .info_subplace .info_text_bg {}
+#wrap main .room_contents .suit .room_info_bg .info_right .info_subplace .info_text_bg dt {}
+#wrap main .room_contents .suit .room_info_bg .info_right .info_subplace .info_text_bg .fitness {}
+#wrap main .room_contents .suit .room_info_bg .info_right .info_subplace .info_text_bg .fitness dt {}
+#wrap main .room_contents .suit .room_info_bg .info_right .info_subplace .info_text_bg .fitness dd {}

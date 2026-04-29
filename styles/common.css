@@ -4,6 +4,251 @@
     This CSS is part of a student project. 
     Any resemblance to real-world commercial sites is purely for design practice.
 */
+#wrap {width: 100%; min-width:1920px;}
+/* ======================================= header */
+#wrap header { width: 100%; min-width:1920px; 
+    position: absolute; top: 0; left: 50%; transform: translateX(-50%); z-index: 999; 
+}
+#wrap header .h_top { 
+    display: flex; flex-flow: row nowrap; gap:20px;
+    justify-content: flex-end; align-items: center;
+    padding: 20px 299px 20px 0;
+}
+#wrap header .h_top li {position: relative;}
+#wrap header .h_top li:nth-child(1)::after{
+    content: ''; display: block;
+    width: 1px; height: 7px; background: #fff;
+    position: absolute; top: 5px; left: 45px;
+}
+#wrap header .h_top li:nth-child(2)::after{
+    content: ''; display: block;
+    width: 1px; height: 7px; background: #fff;
+    position: absolute; top: 5px; left: 55px;
+}
+#wrap header .h_top li a {
+    color: #fff; font-size: 0.88rem;
+}
+#wrap header .h_top .language {
+    position: relative;
+    display: inline-flex;
+}
+#wrap header .h_top .language p {
+    color: #fff; font-size: 0.88rem; margin-right: 5px;
+}
+#wrap header .h_top .language > a {
+    display: block;
+    width: 10px; height: 14px;
+}
+#wrap header .h_top .language a img {width: 100%;}
+#wrap header .h_top .language .language_more {
+    display: none; 
+    position: absolute; left:60px; top:-10px;
+    border: 1px solid #D9D9D9;
+    padding: 5px 10px 0 10px; z-index: 100;
+    font-size: 0.63rem;
+}
+#wrap header .h_top .language:hover .language_more {
+    display: block;
+}
+#wrap header .h_top .language .language_more a {
+    padding-bottom: 10px; display: block; 
+}
+#wrap header .h_bottom { 
+    height: 50px;
+    padding: 0 300px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+}
+#wrap header .h_bottom .main_logo {}
+#wrap header .h_bottom .main_logo a {}
+#wrap header .h_bottom .main_logo a img {width: 100%;}
+#wrap header .h_bottom nav {}
+#wrap header .h_bottom nav .gnb {
+    display: flex; flex-flow: row nowrap; gap: 50px;
+}
+#wrap header .h_bottom nav .gnb li {
+    display: flex; flex-flow: row nowrap;
+}
+#wrap header .h_bottom nav .gnb li a {
+    display: block; 
+    position: relative; 
+    font-size: 1.25rem; color: #fff;
+}
+#wrap header .h_bottom nav .gnb > li:hover a {color:#3F2B2D;}
+#wrap header .h_bottom nav .gnb li a p {
+    color: #fff; margin-right: 20px;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg { display: none;
+    width: 100%; min-width:1920px; height: 300px; 
+    background: #f5f5f5;
+    position: absolute; top:104px; left: 0; z-index: 999;
+}
+#wrap header .h_bottom nav .gnb > li:hover .depth_bg { 
+    display: flex; flex-flow: row nowrap; 
+}
+#wrap header .h_bottom nav .gnb > li .depth_bg::before {
+    content: "";
+    position: absolute;
+    top: -30px; /* 메인 메뉴 하단과 서브메뉴 사이의 간격만큼 위로 올림 */
+    left: 0;
+    width: 100%;height: 30px; /* 간격만큼의 높이 */
+}
+#wrap header .h_bottom nav .gnb li .depth_bg h2 {
+    font-size: 1.13rem; color: #3F2B2D; font-weight: 300; 
+    margin: 141px 0 141px 388px;
+}
+/* ======================================= 호텔찾기 depth */
+#wrap header .h_bottom nav .gnb li .depth_bg .hotel_depth2 { 
+    padding: 50px 0 0 170px; 
+    display: flex;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .hotel_depth2 > li {
+    padding: 0 60px;  
+    display: flex; flex-flow: column nowrap; 
+    position: relative;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .hotel_depth2 > li::before {
+    content: ''; display: block;
+    position: absolute; left: 0; top: 100px; transform: translateY(-50%); 
+    width: 1px; height: 100px;    
+    background-color: #d9d9d9; 
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .hotel_depth2 > li:first-child::before {display: none;}
+#wrap header .h_bottom nav .gnb li .depth_bg .hotel_depth2 > li > a {
+    display: block;
+    font-size: 0.94rem; color: #3F2B2D; font-weight: 500;
+    margin-bottom: 40px; 
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .hotel_depth2 li .hotel_depth3 li {
+    margin-bottom: 20px;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .hotel_depth2 li .hotel_depth3 li a,
+#wrap header .h_bottom nav .gnb li .depth_bg .hotel_depth2 li .hotel_depth3_3 li a {
+    font-size: 0.88rem; color: #000;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .hotel_depth2 li .hotel_depth3_3 { 
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px; 
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .hotel_depth2 li .hotel_depth3_3 li {
+    margin-bottom: 0; 
+}
+/* ======================================= 신라소개 depth */
+#wrap header .h_bottom nav .gnb li .depth_bg .info_depth2 {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);    
+    padding: 118px 0 118px 170px; 
+    gap:30px;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .info_depth2 > li {
+    padding: 0 50px;  
+    display: flex; flex-flow: column nowrap; 
+    position: relative;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .info_depth2 li a {
+    font-size: 0.94rem; color: #3F2B2D; font-weight: 500;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .info_depth2 li::after {
+    content: '';
+    position: absolute; right: 0; top: 50%; transform: translateY(-50%);
+    width: 1px; height: 12px; 
+    background-color: #d9d9d9;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .info_depth2 li:nth-child(4n)::after {display: none;}
+/* ======================================= 객실 depth */
+#wrap header .h_bottom nav .gnb li .depth_bg .room_depth2 {
+    padding: 50px 0 0 170px;  position: relative;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .room_depth2 > li {
+    display: flex;  flex-flow: column;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .room_depth2 + .room_depth2::before {
+    content: ''; display: block;
+    position: absolute; 
+    left: 20%; top: 100px;
+    width: 1px; height: 100px;  
+    background-color: #d9d9d9;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .room_depth2 > li > a {
+    display: block;
+    font-size: 0.94rem; color: #3F2B2D; font-weight: 500;
+    margin-bottom: 40px;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .room_depth2 li .room_depth3 {
+    display: flex; flex-flow: column; gap: 15px;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .room_depth2 li .room_depth3 li a, 
+#wrap header .h_bottom nav .gnb li .depth_bg .room_depth2 li .room_depth3_3 li a {
+    font-size: 0.88rem; color: #000;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .room_depth3_3 li {
+    margin-bottom: 20px;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .room_depth3_3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px 20px; 
+}
+/* ======================================= 다이닝 depth */
+#wrap header .h_bottom nav .gnb li .depth_bg .dining_depth2 {
+    padding: 50px 0 0 170px;  position: relative;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .dining_depth2 > li {
+    display: flex;  flex-flow: column;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .dining_depth2 + .dining_depth2::before {
+    content: ''; display: block;
+    position: absolute; 
+    left: 30%; top: 100px;
+    width: 1px; height: 100px;  
+    background-color: #d9d9d9;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .dining_depth2 > li > a {
+    display: block;
+    font-size: 0.94rem; color: #3F2B2D; font-weight: 500;
+    margin-bottom: 40px;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .dining_depth2 li .dining_depth3 {
+    display: flex; flex-flow: column; gap: 15px;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .dining_depth2 li .dining_depth3 li a, 
+#wrap header .h_bottom nav .gnb li .depth_bg .dining_depth2 li .dining_depth3_1 li a {
+    font-size: 0.88rem; color: #000;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .dining_depth3_1 li {
+    margin-bottom: 20px;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .dining_depth3_1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap:20px; 
+}
+/* ======================================= 멤버십 depth */
+#wrap header .h_bottom nav .gnb li .depth_bg .membership_depth2 {
+    padding: 50px 0 0 170px;  position: relative;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .membership_depth2 > li {
+    display: flex;  flex-flow: column;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .membership_depth2 + .membership_depth2::before {
+    content: ''; display: block;
+    position: absolute; 
+    left: 30%; top: 100px;
+    width: 1px; height: 100px;  
+    background-color: #d9d9d9;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .membership_depth2 > li > a {
+    display: block;
+    font-size: 0.94rem; color: #3F2B2D; font-weight: 500;
+    margin-bottom: 40px;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .membership_depth2 li .membership_depth3 {
+    display: flex; flex-flow: column; gap: 15px;
+}
+#wrap header .h_bottom nav .gnb li .depth_bg .membership_depth2 li .membership_depth3 li a {
+    font-size: 0.88rem; color: #000;
+}
 /*  =======================================  전체타이틀 */
 #wrap main .room_wrap .room_title,
 #wrap main .dining_wrap .dining_title,
@@ -127,4 +372,82 @@ width: 800px; height: 519px;
 #wrap main .dining_wrap .dining_contents .loungebar .loungebar_contents .contents_bg .contents_details .cd_img p img,
 #wrap main .dining_wrap .dining_contents .bakary .contents_details .cd_img p img {
     width: 100%; height: 100%;  object-fit: cover;/* 이미지중앙에배치 */ 
+}
+/* ==================================footer */
+#wrap footer {   width: 100%;  min-width:1920px;
+    background: #EEEBE6;
+    padding: 50px 160px;
+}
+#wrap footer .footer_top {
+    display: flex; flex-flow: row nowrap; gap: 50px;
+}
+#wrap footer .footer_top .main_logo {}
+#wrap footer .footer_top .main_logo a {
+    display: block; width: 373px; height: 70px; 
+}
+#wrap footer .footer_top .main_logo a img {
+    width: 100%; padding-top: 20px;
+}
+#wrap footer .footer_top .ft_right {}
+#wrap footer .footer_top .ft_right .ft_upper {   
+    display: flex; flex-flow: row nowrap; 
+    justify-content: space-between; align-items: center;
+    width: 1177px; padding: 0 0 30px 20px;
+    border-bottom: 1px solid #ccc;
+}
+#wrap footer .footer_top .ft_right .ft_upper .ft_logo {
+    display: flex; flex-flow: row nowrap; gap: 30px;
+}
+#wrap footer .footer_top .ft_right .ft_upper .ft_logo a {
+    display: block; height: 40px; 
+}
+#wrap footer .footer_top .ft_right .ft_upper .ft_logo a img {height: 100%;}
+#wrap footer .footer_top .ft_right .ft_upper .sns {
+    display: flex; flex-flow: row nowrap; gap: 15px;
+}
+#wrap footer .footer_top .ft_right .ft_upper .sns a {
+    display: block; width: 32px; height: 32px;
+}
+#wrap footer .footer_top .ft_right .ft_upper .sns a img {width: 100%; height: 100%;}
+#wrap footer .footer_top .ft_right .ft_down {
+    display: flex; flex-flow: row wrap; gap:20px;
+    padding: 30px 70px 0 20px;
+}
+#wrap footer .footer_top .ft_right .ft_down a:nth-child(7):after,
+#wrap footer .footer_top .ft_right .ft_down a:nth-child(12):after {display: none;}
+#wrap footer .footer_top .ft_right .ft_down a::after {
+    content: ''; display: block;
+    width: 1px; height: 8px; background: #d9d9d9;
+    position: absolute; top: 50%; right: 10%; transform: translateY(-50%);
+}
+#wrap footer .footer_top .ft_right .ft_down a {
+    padding: 0 60px 0 0; position: relative;
+    font-size: 0.94rem;
+}
+#wrap footer .footer_bottom {
+    display: flex; flex-flow: row nowrap; 
+    padding: 40px 0 0 0; justify-content: space-between; align-items: center;
+}
+#wrap footer .footer_bottom address {
+    display: flex; flex-flow: row wrap; 
+    width: 1149px; align-items: center; gap: 10px;
+}
+#wrap footer .footer_bottom address p {
+    font-size: 0.94rem; padding-right: 10px;
+}
+#wrap footer .footer_bottom address a {
+    border: 1px solid #d9d9d9;
+    padding: 10px; border-radius: 5px;
+}
+#wrap footer .footer_bottom .lsms {
+    display: flex; flex-flow: row nowrap; gap: 10px;
+}
+#wrap footer .footer_bottom .lsms .lsms_img {width: 52px; height: 41px;}
+#wrap footer .footer_bottom .lsms .lsms_img img {
+    width: 100%; height: 100%; object-fit: cover;/* 이미지가운데로조정 */ 
+}
+#wrap footer .footer_bottom .lsms .lsms_txt {}
+#wrap footer .footer_bottom .lsms .lsms_txt p:last-child {padding: 0;}
+#wrap footer .footer_bottom .lsms .lsms_txt p {
+    font-size: 0.94rem; font-weight: 300; padding-bottom: 10px;
 }
